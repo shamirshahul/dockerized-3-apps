@@ -17,7 +17,7 @@ createConnection({
   port: 5432,
   username: "shamir",
   password: "shamir@123",
-  //database: "qr-app-db",
+  // database: "qr-app-db",
   entities: [Guest, User, Muser],
   synchronize: true,
 }).then((connection) => {
