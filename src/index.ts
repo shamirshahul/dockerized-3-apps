@@ -13,11 +13,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 createConnection({
   type: "postgres",
-  host: "postgres",
+  host: "localhost",
   port: 5432,
   username: "shamir",
   password: "shamir@123",
-  // database: "qr-app-db",
+  database: "qr-app-db",
   entities: [Guest, User, Muser],
   synchronize: true,
 }).then((connection) => {
